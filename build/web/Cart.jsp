@@ -149,7 +149,6 @@
                                     <p class="address-payment"><i class="fas fa-phone"></i> ${user.getUserPhone()}</p>
                                     <p class="address-payment"><i class="fas fa-map-marker-alt"></i> ${user.getUserAddress()}</p>
                                 </div>
-                                <a href="#" class="hover-change" onclick="change()">EDIT</a>
                             </c:if>
                             <c:if test="${user == null}">
                                 <div class="delivery">

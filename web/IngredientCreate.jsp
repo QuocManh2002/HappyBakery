@@ -65,8 +65,8 @@
                             <input id="price" name="price" type="text" placeholder="Input ingredient price" required>
                         </div>
                         <div class="form-group-blog">
-                            <label for="sale" class="fnt-wei-bold">Sale Percent:</label>
-                            <input id="sale" name="sale" type="text" placeholder="Input sale">
+                            <label for="sale" class="fnt-wei-bold">Sale Percent<span class="cl-red">*</span>:</label>
+                            <input id="sale" name="sale" type="text" placeholder="Input sale" required="">
                         </div>
                     </div>
                     <button class="create-blog" type="submit" value="CreateIngredient" name="action">Create Ingredient</button>

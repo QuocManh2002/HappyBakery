@@ -16,7 +16,7 @@ import javax.servlet.http.Part;
 public class ImageUploader {
     
     //private static String imgPath = "C:\\Users\\thinh\\OneDrive\\Documents\\NetBeansProjects\\HappyBakeryV2\\web\\img";
-        private static String imgPath = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\HappyBakeryV2\\web\\img";
+    private static String imgPath = "C:\\Users\\ADMIN\\Downloads\\Neo Happy Bakery\\web\\img";
 
     public static String getImgPath() {
         return imgPath;

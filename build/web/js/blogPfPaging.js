@@ -48,7 +48,6 @@ function renderProduct(product) {
             html += '</div>';
             html += '<p class="blog-more">' + item.type + '</p>';
             html += '<p class="blog-more">' + item.postday + '</p>';
-            html += '<p class="blog-more">' + item.note + '</p>';
             html += '<a href="GetUserProfile?checkedUserId=' + item.userid + '" class="author">' + item.username + '</a>';
             html += '</div>';
             if (item.loginedid === item.userid) {

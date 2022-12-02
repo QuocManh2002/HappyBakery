@@ -178,7 +178,11 @@
                             <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                                 <a href="#" class="dropdown-item">My Profile</a>
                                 <a href="#" class="dropdown-item">Settings</a>
-                                <a href="MainController?action=Logout" class="dropdown-item">Log Out</a>
+                                <c:url var="logoutLink" value="MainController">
+                                    <c:param name="action" value="logout"/>
+                                </c:url>
+                                <a href="${logoutLink}" class="dropdown-item">Log Out</a>
+
                             </div>
                         </div>
                     </div>
@@ -316,90 +320,90 @@
                     </div>
                 </div>
                 <!-- Recent RECIPE end-->  
-                
+
                 <!-- Todo List -->  
                 <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        
-                    
-                        <div class="h-100 bg-secondary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">To Do List</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
-                                <button type="button" class="btn btn-primary ms-2">Add</button>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                    <div class="row g-4">
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+
+
+                            <div class="h-100 bg-secondary rounded p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="mb-0">To Do List</h6>
+                                    <a href="">Show All</a>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
+                                    <button type="button" class="btn btn-primary ms-2">Add</button>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom py-2">
+                                    <input class="form-check-input m-0" type="checkbox">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Short task goes here...</span>
+                                            <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center border-bottom py-2">
+                                    <input class="form-check-input m-0" type="checkbox">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Short task goes here...</span>
+                                            <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox" checked>
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span><del>Short task goes here...</del></span>
-                                        <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center border-bottom py-2">
+                                    <input class="form-check-input m-0" type="checkbox" checked>
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span><del>Short task goes here...</del></span>
+                                            <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center border-bottom py-2">
+                                    <input class="form-check-input m-0" type="checkbox">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Short task goes here...</span>
+                                            <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center pt-2">
+                                    <input class="form-check-input m-0" type="checkbox">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Short task goes here...</span>
+                                            <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Content End -->
+
+
+                <!-- Back to Top -->
+                <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
             </div>
-            <!-- Content End -->
 
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/chart/chart.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/tempusdominus/js/moment.min.js"></script>
+            <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+            <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-            <!-- Back to Top -->
-            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-        </div>
-
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/chart/chart.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/tempusdominus/js/moment.min.js"></script>
-        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="jsAdmin/main.js"></script>
+            <!-- Template Javascript -->
+            <script src="jsAdmin/main.js"></script>
     </body>
 </html>

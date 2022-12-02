@@ -67,7 +67,7 @@
             <c:forEach items="${blogList}" var="blog">
                 {id: '<c:out value="${blog.getBlogId()}"/>', img: '<c:out value="${blog.getBlogImg()}"/>', title: '<c:out value="${blog.getBlogTitle()}"/>', type: '<c:out value="${blog.getBlogCategory()}"/>',
                     postday: '<c:out value="${blog.getBlogAddedDay()}"/>', userid: '<c:out value="${blog.getUserId()}"/>', username: '<c:out value="${blog.getUserName()}"/>',
-                    rating: '<c:out value="${blog.getBlogRatingPoint()}"/>', note: '<c:out value="${blog.getBlogNote()}"/>'},
+                    rating: '<c:out value="${blog.getBlogRatingPoint()}"/>', },
             </c:forEach>
             ];
 

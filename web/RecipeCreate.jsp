@@ -29,17 +29,7 @@
             tinymce.init({
                 selector: '#mytextarea',
                 plugins: 'advlist autolink lists link image charmap preview anchor pagebreak code visualchars wordcount',
-                setup: function (editor) {
-                    var max = 500;
-                    editor.on('submit', function (event) {
-                        var numChars = tinymce.activeEditor.plugins.wordcount.body.getCharacterCount();
-                        if (numChars > max) {
-                            alert("Over 500 letters !!");
-                            event.preventDefault();
-                            return false;
-                        }
-                    });
-                }
+
 
             });
         </script>

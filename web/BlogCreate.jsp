@@ -30,7 +30,6 @@
             tinymce.init({
                 selector: '#mytextarea',
                 plugins: 'advlist autolink lists link image charmap preview anchor pagebreak code visualchars wordcount',
-                
 
             });
         </script>

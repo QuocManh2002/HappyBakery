@@ -8,7 +8,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
-
 <c:choose>
     <c:when test="${sessionScope.user == null}">
         <c:import url="AuthRedirect.jsp"/>
@@ -18,6 +17,7 @@
     </c:otherwise>
 </c:choose>
 <c:import url="Navigation.jsp"/>
+
 <html>
     <head>
         <link rel="icon" type="image/x-icon" href="img/websitelogo.jpg">
@@ -86,7 +86,7 @@
                         <c:param name="followed" value="${checkedUser.getUserId()}"/>
                         <c:param name="follower" value="${user.getUserId()}"/>
                     </c:url>
-                 
+
                 </div>
 
                 <div class="store-info-filter">
@@ -195,7 +195,7 @@
                                         <a href="${delivering}" onclick="clickChange()" class="status" id="delivering">Delivering</a>
                                         <a href="${completed}" onclick="clickChange()" class="status" id="completed">Completed</a>
                                         <a href="${all}" onclick="clickChange()" class="status" id="all">All</a>
-                                        
+
                                     </div>
 
                                     <div class="table-order" id="order-container">
@@ -451,7 +451,7 @@
                     userid: '${blog.getUserId()}',
                     username: '${user.getUserName()}',
                     rating: '${blog.getBlogRatingPoint()}',
-                    note: '${blog.getBlogNote()}' },
+            },
             </c:forEach>
             ];
             <c:if test="${checkedUser.getUserId() == user.getUserId()}">

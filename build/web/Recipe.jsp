@@ -39,7 +39,8 @@
             <p class="breadcrums"><a href="">Home</a>/<a href="">Recipe</a></p>
             <h1 class="mapping-heading">Recipe</h1>
         </div>
-
+        
+        
         <div class="container bg-item-grey">
             <div class="recipe-container" id="recipe-container">
                 <!-- Recipe Item -->

@@ -177,7 +177,10 @@
                             <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                                 <a href="#" class="dropdown-item">My Profile</a>
                                 <a href="#" class="dropdown-item">Settings</a>
-                                <a href="MainController?action=Logout" class="dropdown-item">Log Out</a>
+                                <c:url var="logoutLink" value="MainController">
+                                    <c:param name="action" value="logout"/>
+                                </c:url>
+                                <a href="${logoutLink}" class="dropdown-item">Log Out</a>
                             </div>
                         </div>
                     </div>

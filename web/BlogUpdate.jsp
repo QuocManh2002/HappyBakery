@@ -21,7 +21,6 @@
             tinymce.init({
                 selector: '#mytextarea',
                 plugins: 'advlist autolink lists link image charmap preview anchor pagebreak code visualchars wordcount',
-                
                 init_instance_callback: function (editor) {
                     editor.setContent('${blog.getBlogDescription()}');
                 }

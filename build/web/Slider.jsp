@@ -18,7 +18,7 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="img/banner.jpg" style="width:100%">
+                <img src="img/slider-recipe.jpg" style="width:100%">
                 <div class="text">
                     <h2 class="slider-heading">Welcome To Happy Bakery</h2>
                     <p class="slider-description">Explore newest Recipes</p>
@@ -28,7 +28,7 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="img/banner.jpg" style="width:100%">
+                <img src="img/slider-blog.jpg" style="width:100%">
                 <div class="text">
                     <h2 class="slider-heading">BLOG</h2>
                     <p class="slider-description">Useful And Interesting</p>
@@ -38,7 +38,7 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="img/banner.jpg" style="width:100%">
+                <img src="img/slider-store.jpg" style="width:100%">
                 <div class="text">
                     <h2 class="slider-heading">STORE</h2>
                     <p class="slider-description">All Sales Available</p>
